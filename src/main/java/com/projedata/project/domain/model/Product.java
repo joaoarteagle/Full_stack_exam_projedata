@@ -10,10 +10,11 @@ import java.util.List;
 
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
 @Entity
 @Table(name = "TB_PRODUCTS")
-public class Products {
+@Data
+
+public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -31,5 +32,8 @@ public class Products {
             orphanRemoval = true
     )
     private List<Composition> composition;
+
+
+
 
 }
